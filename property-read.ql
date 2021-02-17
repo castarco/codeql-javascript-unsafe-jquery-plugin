@@ -1,6 +1,5 @@
-
 import javascript
 
-from DataFlow::PropRead fnCall
-where jquery().getAPropertyRead() = fnCall and fnCall.getPropertyName() = "fn"
-select fnCall
+from DataFlow::PropRead fnRead
+where jquery().getAPropertyRead() = fnRead and fnRead.getPropertyName() = "fn"
+select fnRead
